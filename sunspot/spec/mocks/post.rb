@@ -74,6 +74,10 @@ Sunspot.setup(Post) do
   string :legacy, :as => :legacy_field_s do
     "legacy #{title}"
   end
+  
+  string :legacy_array, :as => :legacy_array_field do
+    ['first string', 'second string']
+  end
 end
 
 class PhotoPost < Post
